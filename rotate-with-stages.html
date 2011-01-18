@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta charset="utf-8">
+<title>Transforming video</title>
+<link rel="stylesheet" href="mainstyles.css" type="text/css">
+<style type="text/css" media="screen">
+  video{width:400px;height:300px;position:absolute;top:0;left:0;}
+  .stage{width:400px;height:300px;position:relative;overflow:hidden;}
+  video.scale2{
+    transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    -o-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+  }
+  video.rotate20{
+    transform:rotate(20deg);
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+  }
+  video.both{
+    transform:scale(1.5) rotate(20deg);
+    -moz-transform:scale(1.5) rotate(20deg);
+    -webkit-transform:scale(1.5) rotate(20deg);
+    -o-transform:scale(1.5) rotate(20deg);
+    -ms-transform:scale(1.5) rotate(20deg);
+  }
+  .demostage{
+    width:400px;
+    color:#fff;
+    font-size:100px;
+    text-align:center;
+    padding:100px 0;
+    background:rgba(50,40,80,1);
+    position:relative;
+    margin:70px 0;
+  }
+  .crop{
+    overflow:hidden;
+  }
+  .demovideo{
+    font-size:50px;
+    position:absolute;
+    top:0;
+    left:0;
+    color:#000;
+    transform:rotate(20deg);
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    width:400px;
+    padding:50px 0 200px;
+    background:rgba(152,234,123,.8);
+  }
+</style>
+</head>
+<body>
+  <header><h1>Transforming HTML5 video with CSS3</h1></header>
+  <nav>
+    <ul>
+      <li><a href="rotate.html">Rotate and scale videos</a></li>
+      <li><strong>Rotate and scale videos (cropped)</strong></li>
+      <li><a href="transforming-video.html">Video Player with zoom and rotate</a></li>
+    </ul>
+  </nav>
+
+   <h2>How it works</h2>
+
+   <div class="demostage">Stage<div class="demovideo">Video</div></div>
+
+   <div class="demostage crop">Stage<div class="demovideo">Video</div></div>
+
+    <h2>Normal video:</h2>
+
+    <div class="stage"><video controls>
+      <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4" type="video/mp4">         
+      <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973.ogv" type="video/ogg">         
+    </video></div>
+
+    <h2>Scaled to 2:</h2>
+
+    <div class="stage"><video controls class="scale2">
+ 
+        <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4" type="video/mp4">         
+        <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973.ogv" type="video/ogg">         
+
+    </video></div>
+
+    <h2>Rotated by 20 degrees:</h2>
+
+    <div class="stage"><video controls class="rotate20">
+
+        <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4" type="video/mp4">         
+        <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973.ogv" type="video/ogg">         
+
+    </video></div>
+
+    <h2>Scaled and rotated:</h2>
+
+    <div class="stage"><video controls class="both">
+
+        <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4" type="video/mp4">         
+        <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973.ogv" type="video/ogg">         
+
+    </video></div>
+
+
+    <footer>Written by <a href="http://wait-till-i.com">Chris Heilmann</a>, powered by HTML5 and <a href="http://archive.org">Archive.org</a> 
+      <span class="mark"><a href="http://www.w3.org/html/logo/">
+      <img src="html5-badge-h-css3-multimedia-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Multimedia, and Semantics" title="HTML5 Powered with CSS3 / Styling, Multimedia, and Semantics"></a></span>
+    </footer>
+</body>
+</html>
+

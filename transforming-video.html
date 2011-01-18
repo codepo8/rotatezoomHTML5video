@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta charset="utf-8">
+<title>Transforming video</title>
+<link rel="stylesheet" href="mainstyles.css" type="text/css">
+<style type="text/css" media="screen">
+
+  #stage{background:#eee;width:400px;height:300px;overflow:hidden;
+         position:relative;margin:2em 0;}
+  #stage span{font-size:20px;color:#666;display:block;padding:2em;}
+  video{width:400px;height:300px;position:absolute;top:0;left:0;}
+  #controls{position:relative;width:400px;}
+  #change{position:absolute;right:-100px;top:-300px;width:100px;}
+  button{font-size:150%;text-align:center;display:block;}
+  #change button{width:60px;border:none;background:#fff;}
+  
+</style>
+</head>
+<body>
+  <div id="boundary">
+  <header><h1>Transforming HTML5 video with CSS3</h1></header>
+  <nav>
+    <ul>
+      <li><a href="rotate.html">Rotate and scale videos</a></li>
+      <li><a href="rotate-with-stages.html">Rotate and scale videos (cropped)</a></li>
+      <li><strong>Video Player with zoom and rotate</strong></li>
+    </ul>
+  </nav>
+
+  <div id="stage">
+    <video>
+      <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4" type="video/mp4">         
+      <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973.ogv" type="video/ogg">         
+        <p>Your browser doesn't support the HTML5 video tag it seems. 
+           You can see this video as part of a collection 
+           <a href="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/">
+             at archive.org</a>.
+        </p>         
+    </video>
+  </div>
+  <div id="controls"></div>
+  <footer>Written by <a href="http://wait-till-i.com">Chris Heilmann</a>, powered by HTML5 and <a href="http://archive.org">Archive.org</a> 
+    <span class="mark"><a href="http://www.w3.org/html/logo/">
+    <img src="html5-badge-h-css3-multimedia-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Multimedia, and Semantics" title="HTML5 Powered with CSS3 / Styling, Multimedia, and Semantics"></a></span>
+  </footer>
+  </div>
+  <script src="transformvideo.js"></script>
+</body>
+</html>
+
