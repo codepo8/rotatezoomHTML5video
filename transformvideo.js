@@ -47,8 +47,8 @@
                             '<button class="right">⇢</button>' +
                             '<button class="up">⇡</button>' +
                             '<button class="down">⇣</button>' +
-                            '<button class="rotateleft">&#x21ba;</button>' +
-                            '<button class="rotateright">&#x21bb;</button>' +
+                            '<button class="rotateleft">&#x21bb;</button>' +
+                            '<button class="rotateright">&#x21ba;</button>' +
                             '<button class="reset">reset</button>' +
                           '</div>';
   }
